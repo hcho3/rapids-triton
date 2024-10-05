@@ -127,7 +127,7 @@ class Client(object):
                 name: get_response_data(response, handle, name)
                 for name, (_, handle, _) in outputs.items()
             }
-            time.sleep(3)
+            time.sleep(0.1)
             self.release_io(inputs)
             self.release_io(outputs.values())
 
